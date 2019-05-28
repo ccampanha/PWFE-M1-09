@@ -14,11 +14,17 @@ header {
 	background-color:#333333;
 	color: #FFFFFF;
 	padding: 15px;
+	overflow:hidden;
 }
 
 header h1 {
 	color:#FFFFFF;
 	margin: 0;
+	float:left;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	padding-left:75px;
+	background-size: contain; /*image se ajusta con el alto de la caja de texto */
 }
 header a {
 	color:#FFFFFF;
@@ -29,6 +35,9 @@ header a {
 header a:hover {
 	background-color: #FFFFFF;
 	color:#333333;
+}
+nav {
+	float: right;
 }
 nav ul {
 	padding:0;
