@@ -71,6 +71,10 @@ img{
 	padding: 10px;
 	margin:10px;
 }
+
+.noticia:last-child {
+	border: none;
+}
 .noticia-img {
 	width: 30%;
 }
@@ -118,11 +122,11 @@ img{
 }
 
 #tabla-posiciones tr {
-	border_bottom: solid 1px yellow9;
+	border-bottom: solid 1px #090909;
 }
 
 #tabla-posiciones tr:first-child,
-#tabla-posiciones tr:last-child{
+#tabla-posiciones tr:last-child {
 	border:none;
 }
 
@@ -145,10 +149,6 @@ img{
 footer {
 	background-color:#333333;
 	color: #FFFFFF;
-		margin:0;
+	text-align:center;
 	padding: 15px;
-}
-
-footer p {
-	text-align: center;
 }
