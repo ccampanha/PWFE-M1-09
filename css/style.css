@@ -93,10 +93,62 @@ img{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+#tabla-posiciones table,
+#tabla-posiciones tr,
+#tabla-posiciones td {
+	/* border: solid 1px #000000; */
+}
+
+#tabla-posiciones td,
+#tabla-posiciones th {
+	padding: 12px;
+}
+
+#tabla-posiciones th {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#tabla-posiciones td {
+	background-color: #D9D9D9;
+	vertical-align: middle;
+}
+
+#tabla-posiciones tr {
+	border_bottom: solid 1px yellow9;
+}
+
+#tabla-posiciones tr:first-child,
+#tabla-posiciones tr:last-child{
+	border:none;
+}
+
+#tabla-posiciones table {
+	width: 600px;
+	margin: auto;
+}
+
+#tabla-posiciones td:nth-of-type(odd) { /* <= Aplica a todos kis <td> impares  */
+	font-weight:700;
+	font-size: 24px;
+	text-align: center;
+}
+
+#tabla-posiciones td:nth-of-type(even) span {
+	font-weight:700;
+	color:#00BB99;
+}
+
 footer {
 	background-color:#333333;
 	color: #FFFFFF;
-	align-items: center,
-	margin:0;
+		margin:0;
 	padding: 15px;
+}
+
+footer p {
+	text-align: center;
 }
