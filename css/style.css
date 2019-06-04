@@ -93,3 +93,10 @@ img{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+footer {
+	background-color:#333333;
+	color: #FFFFFF;
+	align-items: center,
+	margin:0;
+	padding: 15px;
+}
