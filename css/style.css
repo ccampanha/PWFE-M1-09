@@ -34,7 +34,7 @@ header a {
 	padding:5px;
 	display:block;
 }
-header a:hover {
+header a:hover { /* ---> mouse encima */
 	background-color: #FFFFFF;
 	color:#333333;
 }
@@ -151,4 +151,71 @@ footer {
 	color: #FFFFFF;
 	text-align:center;
 	padding: 15px;
+	margin-top: 30px;
+}
+
+button {
+	display:none;
+}
+
+/* Ajuste Mobile con Media Queries */
+
+/*@media DISPOSITIVO and (TAMANHO){
+	CODIGO ccs
+} */
+
+@media screen and (max-width:576px){ /* <--- smartphone */
+	
+	/* Inicio Media Query*/
+	body {
+		background-color: red;
+
+	/* Fin Media Query*/
+	}
+
+	button {
+		display: block;
+		float: right;
+		border:none;
+		padding:5px;
+		font-size: 20;
+		line-height: 1;
+		font-weight: 700;
+		color: #FFFFFF;
+		background-color: transparent;
+		cursor:pointer;
+	}
+
+	button:focus + nav { /* focus:; cuando se clica , +nav:;  la regla se aplica al nav */ 
+		display:block;
+	}
+
+	nav {
+		display: none;
+		float:none;
+		clear: both;
+		text-align: center;
+	}
+
+	nav ul li {
+		display: block;
+		padding: 5px;
+	}
+
+	.noticia {
+		flex-direction: column;
+	}
+
+	.noticia-img,
+	.noticia-txt {
+
+		width:90%;
+	}
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px){ /* <--- tablet */
+	body {
+		background-color: green;
+	}
 }
