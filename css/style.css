@@ -131,8 +131,7 @@ img{
 }
 
 #tabla-posiciones table {
-	width: 600px;
-	margin: auto;
+	width: 90%
 }
 
 #tabla-posiciones td:nth-of-type(odd) { /* <= Aplica a todos kis <td> impares  */
