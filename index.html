@@ -10,8 +10,91 @@
 
     <title>DX - DeporteExtremo</title>
   </head>
-  <body>
-    
+
+<body class="pt-5 mt-2">
+
+    <!-- Inicio Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand font-weight-bold" href="#">
+         <img src="img/logo.png" width="50" class="d-inline-block align-middle" alt="">
+          <span class="align-middle">DeporteXtremo</span> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Fútbol<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">NBA<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Tenis<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Formula 1<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boxeo<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">JJOO<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Moto GP<span class="sr-only">(current)</span></a>
+        </li>            
+      </ul>
+    </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+<!-- Inicio Slider -->
+    <div class="bd-example">
+      <div id="noticias-destacadas" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <figure class="carousel-item active">
+            <img src="img/juegos-olimpicos.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h2>
+            </figcaption> 
+          </figure>
+          
+          <fugure class="carousel-item">
+            <img src="img/f1.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h2>Ricciardo marcó definitivamente el ritmo en los libres de Azerbaiyán</h2>
+            </figcaption>
+          </figure>
+          
+          <figure class="carousel-item">
+            <img src="img/rally.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h3>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h3>
+            </figcaption>
+          </figure>
+        
+        </div>
+        <a class="carousel-control-prev" href="#noticias-destacadas" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#noticias-destacadas" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+<!-- Fin Slider -->
+
+
+
+   
     <main class="container-fluid">
       <section id="ultimas noticias" class="row">
         <div class="col-12 col-md-6 col-lg-12">     
@@ -28,17 +111,17 @@
               <p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>          
             </div>       
           </article> 
+       </div>
       <!-- Fin Noticia #1 -->
-      </div>
 
-          <!-- Inicio Noticia #2 -->
-          <div class="col-12 col-md-6 col-lg-12">     
+      <!-- Inicio Noticia #2 -->
+         <div class="col-12 col-md-6 col-lg-4 offset-lg 2 col-xl-12">     
               <article class="row">
-                <div class="col-12 col-lg-4"> <!-- si la pantalla es media para arriba, >=768 se cambia de  12 a 4px -->
+                <div class="col-12 col-lg-12 col-xl-5"> <!-- si la pantalla es media para arriba, >=768 se cambia de  12 a 4px -->
                   <img src="img/tickets-rusia-mundial.jpg" class="img-fluid">
                 </div>
  
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-md-6 col-lg-4 offset-lg 2 col-xl-12">
                   <h3>Comenzó la venta de entradas para el Mundial de Rusia 2018</h3>
                   <p>por Laura Smasnatta</p>
                   <p>Hoy se abrió la venta al público de tickets, a través del sitio oficial de la FIFA. El proceso se dividirá en dos partes y los espectadores deberán solicitar una tarjeta de hincha 'Fan ID'</p>
@@ -66,16 +149,16 @@
 
 
           <!-- Inicio Noticia #4 -->
-          <div class="col-12 col-md-6 col-lg-12">     
+          <div class="col-12 col-md-6 col-lg-6 col-xl-12">     
               <article class="row">
                 <div class="col-12 col-lg-4"> <!-- si la pantalla es media para arriba, >=768 se cambia de  12 a 4px -->
                   <img src="img/buenos-aires.jpg" class="img-fluid">
                 </div>
  
                 <div class="col-12 col-lg-8">
-            <h3>Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI</h3>
-            <p>por Melina Morales</p>
-            <p>El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico                 </div>       
+                    <h3>Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI</h3>
+                    <p>por Melina Morales</p>
+                    <p>El Comité Organizador de los Juegos de la Juventud presentó su concepto de parques ante la 131a sesión del Comité Olímpico                 </div>       
               </article> 
         </div> 
         <!-- Fin Noticia #4 -->
