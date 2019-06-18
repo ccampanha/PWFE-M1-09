@@ -1,0 +1,46 @@
+<script>
+debugger
+   /*
+	let nombre= "Mate Cocido"     //<-- string
+	let stock = 250            //<-- int
+	let precio = 33.53         //<-- float
+	let disponible = true      //<-- bool
+    */
+    
+    /*
+       Origen de los datos
+       	- Determinado: estan definidos por el programador (hardcodeado)
+       	- Indeterminado: pueden ser definidod por...
+       		* Operacion Matematica/Logica
+       		* Interacion del usuário
+
+    */
+    //Introduccion
+    let nombre= prompt("Ingresse nombre:")
+    let stock= prompt("Ingresse nstock:")
+    let precio=prompt("Ingresse precio:")
+    let precioFinal = precio * 1.21
+    let disponible = confirm("Esta disponible?")
+
+    /*
+		if (CONDICION)(
+			ACA VA CÓDIGO QUE EJECUTARA
+		)
+    */
+    
+    //Nudo
+    if(nombre == ""){
+    	alert("ERROR: El nombre no puede quedar vacio...")
+    }
+
+
+	//window.alert(saludo)
+	
+	//console.log(saludo)
+	
+	//document.write("Hay " + stock + " unidsdes de " + nombre )
+
+	//Desenlace
+	document.write(`<p>Hay ${stock} unidades de <strong>${nombre}</strong> y coestan ARS ${precioFinal} c/u </p>`)
+
+</script>
