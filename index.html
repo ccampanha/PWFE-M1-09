@@ -150,13 +150,20 @@
       ajax.open("GET","noticias.json")
       ajax.onload = function(){ //<-- Funciones Anonimas
         if( ajax.status == 200){ // <-- Respuesta exictosa
-            console.log ("Antes del parseo")
-            console.log (ajax.response)
-            console.log ("Despues del parseo")
-            console.log (JSON.parse(ajax.response))
+            //console.log ("Antes del parseo")
+            //console.log (ajax.response)
+            //console.log ("Despues del parseo")
+            //console.log (JSON.parse(ajax.response))
+
+            let noticias = JSON.parse(ajax.response) //<-- Conversion de JSON a Object
+            
+            noticias.forEach(function(noticia){
+              crearNoticia(noticia.titulo, noticia.autor, noticia.detalle, noticia.imagen)
+            })
         }
       }
-      //ajax.send
+     //ajax.onerror()
+     ajax.send()
 
 
        
