@@ -149,7 +149,10 @@
       let ajax = new XMLHttpRequest()
       //ajax.open("GET","noticias.json")
 
-      ajax.open("GET", "https://api.myjson.com/bins/17negr")
+      //ajax.open("GET", "https://api.myjson.com/bins/17negr") //buscando de myjson.com
+      
+      ajax.open("GET", "https://api.sheety.co/408cfa4b-aa77-4d45-b17d-c959d9643802") //usando datos desde google sheety + 
+
       ajax.onload = function(){ //<-- Funciones Anonimas
         if( ajax.status == 200){ // <-- Respuesta exictosa
             //console.log ("Antes del parseo")
