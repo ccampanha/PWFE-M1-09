@@ -147,7 +147,9 @@
       /*interfaz dinámica: generador de Noticias */
       
       let ajax = new XMLHttpRequest()
-      ajax.open("GET","noticias.json")
+      //ajax.open("GET","noticias.json")
+
+      ajax.open("GET", "https://api.myjson.com/bins/17negr")
       ajax.onload = function(){ //<-- Funciones Anonimas
         if( ajax.status == 200){ // <-- Respuesta exictosa
             //console.log ("Antes del parseo")
