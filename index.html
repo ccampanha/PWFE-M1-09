@@ -151,8 +151,9 @@
 
       //ajax.open("GET", "https://api.myjson.com/bins/17negr") //buscando de myjson.com
       
-      ajax.open("GET", "https://api.sheety.co/408cfa4b-aa77-4d45-b17d-c959d9643802") //usando datos desde google sheety + 
+      //ajax.open("GET", "https://api.sheety.co/408cfa4b-aa77-4d45-b17d-c959d9643802") //usando datos desde google sheety + 
 
+      ajax.open("GET", "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.clarin.com%2Frss%2Fdeportes%2F") // usando rss Clarin
       ajax.onload = function(){ //<-- Funciones Anonimas
         if( ajax.status == 200){ // <-- Respuesta exictosa
             //console.log ("Antes del parseo")
@@ -162,8 +163,12 @@
 
             let noticias = JSON.parse(ajax.response) //<-- Conversion de JSON a Object
             
-            noticias.forEach(function(noticia){
-              crearNoticia(noticia.titulo, noticia.autor, noticia.detalle, noticia.imagen)
+           // noticias.forEach(function(noticia){
+             // crearNoticia(noticia.titulo, noticia.autor, noticia.detalle, noticia.imagen)
+           // })
+
+              noticias.item.forEach(function(noticia){
+              crearNoticia(noticia.title, noticia.author, noticia.description, noticia.enclosure.link)
             })
         }
       }
