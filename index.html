@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>DX - DeporteExtremo</title>
+  </head>
+
+<body class="pt-5 mt-2">
+
+    <!-- Inicio Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand font-weight-bold" href="#">
+         <img src="img/logo.png" width="50" class="d-inline-block align-middle" alt="">
+          <span class="align-middle">DeporteXtremo</span> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Fútbol<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">NBA<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Tenis<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Formula 1<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Boxeo<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">JJOO<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Moto GP<span class="sr-only">(current)</span></a>
+        </li>            
+      </ul>
+    </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+<!-- Inicio Slider -->
+    <div class="bd-example">
+      <div id="noticias-destacadas" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <figure class="carousel-item active">
+            <img src="img/juegos-olimpicos.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h2>Paris y Los Ángeles serán las próximas sedes de los Juegos Olímpicos</h2>
+            </figcaption> 
+          </figure>
+          
+          <fugure class="carousel-item">
+            <img src="img/f1.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h2>Ricciardo marcó definitivamente el ritmo en los libres de Azerbaiyán</h2>
+            </figcaption>
+          </figure>
+          
+          <figure class="carousel-item">
+            <img src="img/rally.jpg" class="d-block w-100" alt="...">
+            <figcaption class="carousel-caption d-block bg-dark position-static py-3 px-4 text´left">
+              <h3>En Córdoba arrancó la 1er etapa del 38° Rally de la Argentina</h3>
+            </figcaption>
+          </figure>
+        
+        </div>
+        <a class="carousel-control-prev" href="#noticias-destacadas" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#noticias-destacadas" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+<!-- Fin Slider -->
+ 
+  <main class="container-fluid">
+      <section id="ultimas-noticias" class="row">
+        <div class="col-12 col-md-6 col-lg-12 d-none">     
+ 
+          <!-- Inicio Noticia #1 -->
+          <article class="row">
+            <div class="col-12 col-lg-4"> <!-- si la pantalla es media para arriba, >=768 se cambia de  12 a 4px -->
+              <img src="img/sorteo-libertadores.jpg" class="img-fluid">
+            </div>
+ 
+             <div class="col-12 col-lg-8 ">
+              <h3>{{TITULO}}</h3>
+              <p>{{AUTOR}}</p>
+              <p>{{DETALLE}}</p>          
+            </div>       
+          </article> 
+       </div>
+      <!-- Fin Noticia #1 -->
+
+      </section>
+      
+  </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+      /* Manipulaccion del DOM  */
+
+      let logo = document.querySelector(".navbar-brand")
+      
+ 
+      // 3) Manipulaccion de Comportamiento
+      logo.onclick = cambiarLogo
+
+      function cambiarLogo(){
+        //Acá adentro programar el codigo que lo cambia todo
+       // alert("ahora dbebo programar ek cambio estetico del logo...")
+
+          // 1) Manipulaccion de contenido (capturar elemento)
+         logo.innerHTML = "DeporteXtremo<sup>+</sup>"
+
+          // 2) Manipulación de Estructura         logo.style.color = "red"
+          logo.style.backgroundColor = "black"
+          logo.title = "Más Deporte, Más Adrenalina"
+          logo.classList.add("font-italic")
+      }
+      ///////////////////////
+      /*interfaz dinámica: generador de Noticias */
+      
+      let ajax = new XMLHttpRequest()
+      //ajax.open("GET","noticias.json")
+
+      //ajax.open("GET", "https://api.myjson.com/bins/17negr") //buscando de myjson.com
+      
+      //ajax.open("GET", "https://api.sheety.co/408cfa4b-aa77-4d45-b17d-c959d9643802") //usando datos desde google sheety + 
+
+      ajax.open("GET", "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fbrasil.elpais.com%2Frss%2Fbrasil%2Fportada_completo.xml") // usando rss El pais
+      ajax.onload = function(){ //<-- Funciones Anonimas
+        if( ajax.status == 200){ // <-- Respuesta exictosa
+            //console.log ("Antes del parseo")
+            //console.log (ajax.response)
+            //console.log ("Despues del parseo")
+            //console.log (JSON.parse(ajax.response))
+
+            let noticias = JSON.parse(ajax.response) //<-- Conversion de JSON a Object
+            
+           // noticias.forEach(function(noticia){
+             // crearNoticia(noticia.titulo, noticia.autor, noticia.detalle, noticia.imagen)
+           // })
+
+              noticias.items.forEach(function(noticia){
+              crearNoticia(noticia.title, noticia.author, noticia.description, noticia.enclosure.link)
+            })
+        }
+      }
+     //ajax.onerror()
+     ajax.send()
+
+
+       
+       /* crearNoticia(noticia1.imagen,noticia1.titulo,noticia1.autor,noticia1.detalle)
+
+        crearNoticia(noticia2.imagen,noticia2.titulo,noticia2.autor,noticia2.detalle)
+
+        crearNoticia(noticia3.imagen,noticia3.titulo,noticia3.autor,noticia3.detalle)
+
+        crearNoticia(noticia4.imagen,noticia4.titulo,noticia4.autor,noticia4.detalle)
+      */
+
+      function crearNoticia(titulo, autor, detalle,imagen){ //<-- argumentos
+            console.log("El argumento imagen es " + imagen)
+            console.log("El argumento titulo es " + titulo)
+            console.log("El argumento autor es " + autor) 
+            console.log("El argumento detalle es " + detalle)
+            console.log("---------------")
+      
+ 
+        let noticia = document.querySelector("#ultimas-noticias div").cloneNode(true)
+       
+         noticia.querySelector("h3").innerText = titulo
+         noticia.querySelector("p").innerText = "por " + autor
+         noticia.querySelector("p:last-child").innerText=detalle
+         //noticia.querySelector("img").src="img/" + imagen
+         noticia.querySelector("img").src= imagen
+
+
+         noticia.classList.remove("d-none")
+
+        console.log(noticia)
+
+       document.querySelector("#ultimas-noticias").appendChild(noticia)
+      }
+
+    </script>
+
+  </body>
+</html>
